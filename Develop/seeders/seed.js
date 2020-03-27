@@ -1,7 +1,7 @@
 let mongoose = require("mongoose");
 let db = require("../models");
 
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect("mongodb://localhost/workoutTracker", {
   useNewUrlParser: true,
   useFindAndModify: false
 });
@@ -52,8 +52,7 @@ let workoutSeed = [
       {
         type: "cardio",
         name: "Running",
-        duration: 25,
-        distance: 4
+        duration: 25
       }
     ]
   },
